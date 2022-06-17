@@ -2,7 +2,6 @@ from functools import partial
 from PySide6.QtWidgets import *
 from PySide6.QtUiTools import *
 from PySide6.Qt3DCore import *
-
 class Calculator(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -88,7 +87,6 @@ class Calculator(QMainWindow):
         if self.placeholder == "+":
             self.num2 = float(self.ui.text.toPlainText())
             self.ui.text.setText(str(self.num1 + self.num2))
-
 
 calculator1 = QApplication([])
 window = Calculator()
